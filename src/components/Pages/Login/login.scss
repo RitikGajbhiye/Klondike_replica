@@ -1,0 +1,31 @@
+.login__container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0fafa;
+}
+
+.login-label {
+  display: block;
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+  color: #696969;
+}
+
+.login__box {
+  max-width: 400px;
+  width: 100%;
+  height: 400px;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.text-styled {
+  color: orange;
+  cursor: pointer;
+}
