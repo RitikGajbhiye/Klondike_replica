@@ -1,10 +1,9 @@
 .login__container {
   width: 100%;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: #f0fafa;
+  display: flex;
+  flex-direction: column;
 }
 
 .login-label {
@@ -28,4 +27,29 @@
 .text-styled {
   color: orange;
   cursor: pointer;
+}
+
+.flex_container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo_box {
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media (max-width: 500px) {
+  .login__box {
+    max-width: 90%;
+    width: 100%;
+  }
+
+  .logo_box {
+    justify-content: center;
+  }
 }

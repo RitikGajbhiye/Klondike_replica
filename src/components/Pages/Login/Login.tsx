@@ -25,82 +25,97 @@ function Login() {
 
   return (
     <div className="login__container">
-      <div className="login__box">
-        <h1
+      <div className="logo_box">
+        <img
+          src="https://frontend.qa.klondikefinancial.com/static/media/image.b605cc62ccb3107e14bb.png"
+          alt="klondike_logo"
           style={{
-            fontSize: "2.5rem",
-            fontWeight: "600",
-            textAlign: "center",
-            marginBottom: "1rem",
+            width: "180px",
+            objectFit: "contain",
           }}
-        >
-          Log in
-        </h1>
-        <Form>
-          <Form.Item>
-            <label className="login-label" htmlFor="username">
-              Username
-            </label>
-            <Input
-              style={{
-                height: "45px",
-              }}
-              type="text"
-              id="username"
-              placeholder="Username"
-              name="username"
-              value={params.username}
-              onChange={HandleChange}
-            />
-          </Form.Item>
+        />
+      </div>
 
-          <Form.Item>
-            <label className="login-label" htmlFor="password">
-              Password
-            </label>
-            <Input
-              style={{
-                height: "45px",
-              }}
-              type="password"
-              id="password"
-              placeholder="Passowrd"
-              name="password"
-              value={params.password}
-              onChange={HandleChange}
-            />
-          </Form.Item>
-
-          <Text
+      <div className="flex_container">
+        <div className="login__box">
+          <h1
             style={{
-              display: "flex",
-              alignItems: "flex-end",
-              marginBottom: "1.5rem",
+              fontSize: "2.5rem",
+              fontWeight: "600",
+              textAlign: "center",
+              marginBottom: "1rem",
             }}
           >
-            <a
-              href="#"
+            Log in
+          </h1>
+          <Form>
+            <Form.Item>
+              <label className="login-label" htmlFor="username">
+                Username
+              </label>
+              <Input
+                style={{
+                  height: "45px",
+                }}
+                type="text"
+                id="username"
+                placeholder="Username"
+                name="username"
+                value={params.username}
+                onChange={HandleChange}
+              />
+            </Form.Item>
+
+            <Form.Item>
+              <label className="login-label" htmlFor="password">
+                Password
+              </label>
+              <Input
+                style={{
+                  height: "45px",
+                }}
+                type="password"
+                id="password"
+                placeholder="Passowrd"
+                name="password"
+                value={params.password}
+                onChange={HandleChange}
+              />
+            </Form.Item>
+
+            <Text
               style={{
-                textAlign: "right",
-                width: "100%",
+                display: "flex",
+                alignItems: "flex-end",
+                marginBottom: "1.5rem",
               }}
             >
-              <span className="text-styled">Forgot Password or Username?</span>
-            </a>
-          </Text>
-
-          <Text
-            style={{
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
-            <Text>
-              Not a Klondike Financial Member?
-              <span className="text-styled"> Start Here </span>
+              <a
+                href="#"
+                style={{
+                  textAlign: "right",
+                  width: "100%",
+                }}
+              >
+                <span className="text-styled">
+                  Forgot Password or Username?
+                </span>
+              </a>
             </Text>
-          </Text>
-        </Form>
+
+            <Text
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <Text>
+                Not a Klondike Financial Member?
+                <span className="text-styled"> Start Here </span>
+              </Text>
+            </Text>
+          </Form>
+        </div>
       </div>
     </div>
   );
