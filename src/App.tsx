@@ -6,8 +6,8 @@ import Login from "./components/Pages/Login/Login";
 function App() {
   return (
     <div className="App">
-      {/* <Home /> */}
-      <Login />
+      <Home />
+      {/* <Login /> */}
     </div>
   );
 }
